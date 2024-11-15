@@ -65,6 +65,20 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@media (max-width: 999px) {
+    .item {
+	width: calc(100% - 23px) !important;
+   }
+    .container {
+	width: calc(100vw - 0px) !important;
+	margin-left: 0px !important;
+	padding-right: 10px !important;
+   }
+    .control {
+	width: calc(100vw - 23px) !important;
+   }
+}
+
 .break {
 	height: 20px;
 }
@@ -82,6 +96,7 @@ input {
 	border: 2px solid black;
 	width: 70%;
 	padding: 10px;
+	margin-right: 10px;
 }
 
 .control {
@@ -104,6 +119,7 @@ input {
 	flex-direction: column;
 	gap: 15px;
 	margin-left: 20vw;
+	padding-right: 10px;
 }
 
 .recipe-tab {
@@ -112,6 +128,7 @@ input {
 
 .recipe {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
 	width: 100%;
 }
